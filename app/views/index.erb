@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <% @posts.each do |post| %>
+   <h2><%= post.name %></h2>
+   <p><%= post.content %></p>
+  <% end %>
+
+  <p> <a href='/posts/new'>Add post</a> </p>
+</body>
+</html>
